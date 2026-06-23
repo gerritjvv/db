@@ -9,7 +9,7 @@ $arch = switch ($env:PROCESSOR_ARCHITECTURE) {
 }
 
 $release = Invoke-RestMethod `
-    -Uri "https://github.com/mainsail-partners/db/releases/latest"
+    -Uri "https://github.com/gerritjvv/db/releases/latest"
 
 $version = $release.tag_name
 

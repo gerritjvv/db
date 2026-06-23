@@ -23,7 +23,7 @@ case "$ARCH" in
   ;;esac
 
 VERSION=$(curl -fsSL \
-  https://github.com/mainsail-partners/db/releases/latest |
+  https://github.com/gerritjvv/db/releases/latest |
   grep '"tag_name"' |
   cut -d '"' -f 4)
 
@@ -31,7 +31,7 @@ FILE="db-${OS}-${ARCH}"
 
 curl -L \
   -o db \
-  "https://github.com/yourorg/db/releases/download/${VERSION}/${FILE}"
+  "https://github.com/gerritjvv/db/releases/download/${VERSION}/${FILE}"
 
 chmod +x db
 
