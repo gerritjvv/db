@@ -5,13 +5,13 @@
 *Linux/Mac*
 
 ```
-curl https://github.com/mainsail-partners/db/install.sh | sh
+curl https://raw.githubusercontent.com/gerritjvv/db/refs/heads/main/install.sh | sh
 ```
 
 *Windows*
 
 ```
-irm https://github.com/mainsail-partners/db/install.ps1 | iex 
+irm https://raw.githubusercontent.com/gerritjvv/db/refs/heads/main/install.ps1 | iex 
 ```
 # Requirements
 
