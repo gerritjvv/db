@@ -7,6 +7,7 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 	_ "github.com/jackc/pgx/v5"
 	_ "github.com/jackc/pgx/v5/stdlib"
+	_ "github.com/microsoft/go-mssqldb"
 )
 import "net/url"
 
@@ -23,6 +24,8 @@ func SqlConnect(dsn string) (*sql.DB, error) {
 		driver = "pgx"
 	case "mysql":
 		driver = "mysql"
+	case "sqlserver", "mssql":
+		driver = "sqlserver"
 	default:
 		return nil, fmt.Errorf("%s is not a supported database driver", u.Scheme)
 	}
